@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+
+    {% if title %}
+        <title>{{ title }} – MCON 104 Term Project</title>
+    {% else %}
+        <title>MCON 104 Term Project </title>
+    {% endif %}
+</head>
+
+<body>
+<nav>
+    <img src="../static/favicon.ico" alt="Logo"/>
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</nav>
+<hr/>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}          
+        <ul>
+            {% for message in messages %}                  
+                <li>{{ message }}</li>
+            {% endfor %}          
+        </ul>
+     {% endif %} 
+{% endwith %} 
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
