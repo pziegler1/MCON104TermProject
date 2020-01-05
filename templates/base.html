@@ -24,18 +24,9 @@
     <img src="../static/favicon.ico" alt="Logo"/>
     <a href="{{ url_for('index') }}">Home</a>
     <a href="{{ url_for('major') }}">Major</a>
+    <a href="{{ url_for('minor') }}">Minor</a>
 </nav>
 <hr/>
-
-{% with messages = get_flashed_messages() %}
-    {% if messages %}          
-        <ul>
-            {% for message in messages %}                  
-                <li>{{ message }}</li>
-            {% endfor %}          
-        </ul>
-     {% endif %} 
-{% endwith %} 
 
 {% block content %}
 {% endblock %}

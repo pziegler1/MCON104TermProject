@@ -20,3 +20,5 @@ def login():
 def index():
     user = {'username': 'PZ'}
     return render_template('index.html', title="Home Page")
+def major():
+    return render_template('major.html', title="Major")
