@@ -1,15 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!--<meta-->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Computer Science at Touro</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+<h1>Required Courses for Minor in Computer Science</h1>
 
-</body>
-</html>
+	<table>
+	  <thead>
+	    <th>Course Number</th>
+		<th>Course Name</th>
+		<th>Number of Credits</th>
+	  </thead>
+	  <tr>
+		<td>MCO 104</td>
+		<td>Computing Theory and Applications</td>
+		<td>4</td>
+	  </tr>
+	  <tr>
+		<td>MCO 140</td>
+		<td>Computer Concepts with Microcomputer Applications</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 148</td>
+		<td>Advanced Computer Business Applications</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 256</td>
+		<td>Database Programming</td>
+		<td>3</td>
+	  </tr>
+	</table>
+
+	<h1>Elective Courses for Minor in Computer Science</h1>
+	<p>A minor in computer science requires 2 of the following electives.</p>
+
+	<table>
+	  <thead>
+	    <th>Course Number</th>
+		<th>Course Name</th>
+		<th>Number of Credits</th>
+	  </thead>
+	  <tr>
+		<td>MAT 141</td>
+		<td>Introduction to Programming</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MAT 147</td>
+		<td>Computer Hardware & System Security</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 202</td>
+		<td>Network Essentials</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 228</td>
+		<td>Advanced Computer Hardware and Systems Security</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 232</td>
+		<td>Advanced Programming</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 245</td>
+		<td>UNIX Operating Systems</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 275</td>
+		<td>Internet Tools and Web Design</td>
+		<td>3</td>
+	  </tr>
+	  <tr>
+		<td>MCO 353</td>
+		<td>Data Communications</td>
+		<td>3</td>
+	  </tr>
+	</table>
+{% endblock %}
