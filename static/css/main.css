@@ -8,15 +8,23 @@
 body {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
     margin-left: var(--medium-margin);
-    background-color: #DDAAFF;
+    background-color: white;
+    width: 320px;
 }
 
 nav {
     margin-top: var(--large-margin);
     margin-bottom: var(--large-margin);
+}
+
+a{
     color: #555555;
 }
 
 tr{
-    border: 2px solid white;
+    border: 2px solid #555555;
+}
+
+tr:hover{
+    background-color: #AA55FF;
 }
