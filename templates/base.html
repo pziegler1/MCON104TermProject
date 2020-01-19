@@ -15,13 +15,15 @@
 </head>
 
 <body>
+<div>
 <nav>
-    <img src="../static/favicon.ico" alt="Logo"/>
-    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('index') }}"><img src="../static/favicon.ico" alt="Logo" height="80"/>Computer Science at Touro<img src="../static/images/computer.jpg" alt="Home" height="80"/></a>
+    <br/>
     <a href="{{ url_for('major') }}">Major</a>
     <a href="{{ url_for('minor') }}">Minor</a>
 </nav>
-<hr/>
+</div>
+    <hr/>
 
 {% block content %}
 {% endblock %}

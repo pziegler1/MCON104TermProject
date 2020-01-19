@@ -16,3 +16,7 @@ nav {
     margin-bottom: var(--large-margin);
     color: #555555;
 }
+
+tr{
+    border: 2px solid white;
+}
