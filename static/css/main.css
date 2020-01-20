@@ -1,15 +1,13 @@
-/* Variables  */
 :root {
     --medium-margin: 10px;
     --large-margin: 18px
 }
 
-/* Styles */
 body {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
     margin-left: var(--medium-margin);
-    background-color: white;
-    width: 320px;
+    background-color: lightgray;
+    color: #555555;
 }
 
 nav {
@@ -17,10 +15,28 @@ nav {
     margin-bottom: var(--large-margin);
 }
 
-a{
-    color: #555555;
+h1, h5, a.tourolink, th{
+	color: #8800FF;
+}
+
+a.menu{
+	color: #555555;
+	font-size: 25px;
+}
+
+#home{
+	font-size: 55px;
+}
+
+a.link{
+	color: 555555;
 }
 
 tr:hover{
-    background-color: #AA55FF;
+	background-color: AA55FF;
+}
+
+table{
+	border-collapse: collapse;
+	text-align:center;
 }

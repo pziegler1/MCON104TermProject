@@ -17,10 +17,10 @@
 <body>
 <div>
 <nav>
-    <a href="{{ url_for('index') }}"><img src="../static/favicon.ico" alt="Logo" height="80"/>Computer Science at Touro<img src="../static/images/computer.jpg" alt="Home" height="80"/></a>
+    <abbr title="Home Page"><a href="{{ url_for('index') }}" class="menu" id="home"><img src="../static/favicon.ico" alt="Logo" height="80"/>Computer Science at Touro<img src="../static/images/computer.jpg" alt="Home" height="80"/></a></abbr>
     <br/>
-    <a href="{{ url_for('major') }}">Major</a>
-    <a href="{{ url_for('minor') }}">Minor</a>
+    <abbr title="Major Page"><a href="{{ url_for('major') }}" class="menu">Major</a></abbr>
+    <abbr title="Minor Page"><a href="{{ url_for('minor') }}" class="menu">Minor</a></abbr>
 </nav>
 </div>
     <hr/>
