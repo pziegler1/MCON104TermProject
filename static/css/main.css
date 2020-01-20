@@ -29,11 +29,11 @@ a.menu{
 }
 
 a.link{
-	color: 555555;
+	color: #555555;
 }
 
 tr:hover{
-	background-color: AA55FF;
+	background-color: #AA55FF;
 }
 
 table{
